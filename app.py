@@ -101,3 +101,28 @@ if build_scatter:
 # Mensaje si no hay selección
 if not build_histogram and not build_scatter:
     st.info('Selecciona al menos una opción para visualizar gráficos.')
+
+# Creación de pie de página con Markdown/HTML/CSS
+# Pie de página con HTML/CSS
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        color: #6c757d;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.8em;
+    }
+    </style>
+    <div class="footer">
+        <p>Desarrollado por <strong>Mafer Navarrete </strong> | 
+           <a href="https://github.com/MaferNap/Project_Sprint_7" target="_blank">Código en GitHub</a></p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
